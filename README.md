@@ -6,7 +6,7 @@ Entrar no diretório.
 cd C:\dev\fiap\lojavirtual2
 
 Inicializar o repositório GIT nesse diretório
-git init
+`git init`
 
 Descompactar os arquivos lojavirtual.zip dentro desse diretório
 
