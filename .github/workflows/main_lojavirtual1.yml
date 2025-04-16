@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Cria e inicializa o ambiente virtual (VENV)
+      - name: Cria e inicializa o ambiente virtual (VENV) (rksakai)
         run: |
           python -m venv venv
           source venv/bin/activate
@@ -34,7 +34,7 @@ jobs:
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
-      - name: Compacta os arquivos para fazer o deplyment
+      - name: Compacta os arquivos para fazer o deplyment (rksakai)
         run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment jobs
@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Production'
+      name: 'Produção (rksakai)'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     
     steps:
